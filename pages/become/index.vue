@@ -151,21 +151,21 @@ export default {
     items: [
       {
         number: 1,
-        text: 'Why should I become an expert on TalkEarn Platform?',
+        text: 'Why should I become an expert on InstaService Platform?',
         content:
-          'On TalkEarn Platform You can monetize Your knowledge instantly. Install our App on Your phone and click a button "Online" when You ready to speak with Your customers. They will be instantly notified that You are online and can talk to You now.',
+          'On InstaService Platform You can monetize Your knowledge instantly. Install our App on Your phone and click the button "Online" when You are ready to consult Your customers. They will be instantly notified that You are online and can talk to You now.',
       },
       {
         number: 2,
-        text: 'How to setup my profile on TalkEarn Platform',
+        text: 'How to setup my profile on InstaService Platform',
         content:
-          'Click the button "Become Expert" and fill out the form. After a short verification, You will be notified by email that Your profile is verified. The email will contain the link to download our App. Install it in Your phone and click the button "Online" when You are ready to consult Your customers',
+          'Click the button "Become Expert" and fill out the form. After a short verification, You will be notified by email that Your profile is verified. The email will contain the link to download our App. Install it on Your phone and click the button "Online" when You are ready to consult Your customers',
       },
       {
         number: 3,
         text: 'How will I get paid?',
         content:
-          'The payment for each call settles instantly, after the call is over based on the pay-per-minute model. It mean that You are paid based on how many minutes were spent in call and price-per-minute that You set',
+          'The payment for each call settles instantly after the call is over based on the pay-per-minute model. It means that You are paid based on how many minutes were spent on call and price-per-minute that You set',
       },
       {
         number: 4,
@@ -177,13 +177,13 @@ export default {
         number: 5,
         text: 'How much money can I make?',
         content:
-          "It's totally up to you. You can work as much as you want. Many sellers work on TalkEarn full time and some keep their 9-5 job while using TalkEarn to make extra money.",
+          "It's totally up to you. You can work as much as you want. Many experts work on InstaService full time; some keep their 9-5 job while using InstaService to make extra money.",
       },
       {
         number: 6,
         text: 'How much does it cost?',
         content:
-          "It's free to join TalkEarn. There is no subscription required or fees to list your services. You keep 90% of each transaction.",
+          "It's free to join InstaService. There is no subscription required or fees to list your services. You keep 90% of each transaction.",
       },
     ],
   }),
