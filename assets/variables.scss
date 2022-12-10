@@ -1,0 +1,30 @@
+// Ref: https://github.com/nuxt-community/vuetify-module#customvariables
+//
+// The variables you want to modify
+// $font-size-root: 20px;
+@import '~/assets/mixins.scss';
+
+@font-face {
+  font-family: "onest";
+  src: url("~/static/fonts/OnestRegular1602-hint.woff") format("woff");
+}
+
+$rating-padding: 0.3rem;
+
+$badge-dot-width: 30px;
+
+$body-font-family: "onest";
+
+$title-font: "onest";
+
+$darkColor: #1f2131;
+
+$purpleColor: #5f4bdb;
+
+$whiteColor: #fff;
+
+$accentColor: #fe8d4d;
+
+$bckgColor: #f8f9fd;
+
+$fs: 16px;
