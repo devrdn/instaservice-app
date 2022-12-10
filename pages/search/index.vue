@@ -1,5 +1,9 @@
 <template>
   <div class="search-page">
+    <h1 class="main-header">All Psychologists by Your search criteria</h1>
+    <div class="local-header-line">
+      <BaseHeaderLine />
+    </div>
     <div class="all-experts">
       <div class="all-experts__container">
         <div class="all-experts__container__head">
@@ -60,7 +64,7 @@
           Ups, there are not experts matching with Your search request. Please
           try again :(
         </h1>
-        <div ref="intersection" id="intersectio-observer"></div>
+        <div id="intersectio-observer" ref="intersection"></div>
       </div>
     </div>
   </div>
@@ -69,9 +73,10 @@
 <script>
 import { mapActions, mapGetters } from 'vuex';
 import ExpertCardAbout from '~/components/ExpertCardAbout.vue';
+import BaseHeaderLine from '~/components/ui/BaseHeaderLine.vue';
 
 export default {
-  components: { ExpertCardAbout },
+  components: { ExpertCardAbout, BaseHeaderLine },
   layout: () => 'emptyhero',
   data: () => {
     return {
@@ -128,6 +133,14 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.local-header-line {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+}
+.search-page {
+  padding-top: 34px;
+}
 .all-experts {
   &__container {
     width: 85%;

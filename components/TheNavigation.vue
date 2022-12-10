@@ -20,7 +20,7 @@
         <div id="myLinks">
           <ul>
             <li class="mobile__item">
-              Experts
+              Home
               <ul>
                 <li class="mobile__subitem">
                   <nuxt-link to="/">Home Page</nuxt-link>
@@ -34,7 +34,7 @@
               </ul>
             </li>
             <li class="mobile__item">
-              Become an expert
+              Experts
               <ul>
                 <li class="mobile__subitem">
                   <nuxt-link to="/become">How to become an expert</nuxt-link>
@@ -142,7 +142,7 @@
       <li class="navigation__item">
         <v-menu open-on-hover rounded="b-xl" offset-y>
           <template #activator="{ on, attrs }">
-            <div style="z-index: 10" v-bind="attrs" v-on="on">Experts</div>
+            <div style="z-index: 10" v-bind="attrs" v-on="on">Home</div>
           </template>
           <v-list>
             <v-list-item>
@@ -166,7 +166,7 @@
       <li class="navigation__item">
         <v-menu open-on-hover close-on-click rounded="b-xl" offset-y>
           <template #activator="{ on, attrs }">
-            <div stlye="z-index: 10" v-bind="attrs" v-on="on">Become an expert</div>
+            <div stlye="z-index: 10" v-bind="attrs" v-on="on">Experts</div>
           </template>
           <v-list>
             <v-list-item>
@@ -234,25 +234,6 @@
           </v-list>
         </v-menu>
       </li>
-      <li class="navigation__item">
-        <v-menu open-on-hover close-on-click rounded="b-xl" offset-y>
-          <template #activator="{ on, attrs }">
-            <div stlye="z-index: 10" v-bind="attrs" v-on="on">Contacts</div>
-          </template>
-          <v-list>
-            <v-list-item>
-              <v-list-item-title>
-                <a href="mailto:info@talkearn.app">info@talkearn.app</a>
-              </v-list-item-title>
-            </v-list-item>
-            <v-list-item>
-              <v-list-item-title>
-                <a href="tel:40746150515">40746150515</a>
-              </v-list-item-title>
-            </v-list-item>
-          </v-list>
-        </v-menu>
-      </li>
     </ul>
     <a class="navigation__item--purple" href="/src/#"> Connect wallet </a>
   </nav>
@@ -263,6 +244,14 @@ export default {
   data: () => ({
     width: null,
     isOpenMenu: false,
+    // navigation: [
+    //   {
+    //     name: 'Home',
+    //     child: [
+
+    //     ]
+    //   }
+    // ]
   }),
   watch: {
     '$route.path': {

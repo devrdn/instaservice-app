@@ -3,9 +3,11 @@
     <div class="hero__container">
       <div class="hero__left">
         <div class="hero__info">
-          <p class="hero__text">Find out</p>
-          <p class="hero__text--purple">Crypto Expert</p>
-          <p class="hero__text">for consulting and gigs</p>
+          <p class="hero__text">Find Your</p>
+          <p class="hero__text--purple">Psychologist</p>
+          <div class="hero__text">
+            and get in touch <span class="hero__text--purple">Now</span>
+          </div>
         </div>
         <p class="hero__description">
           A community of crypto freelancers what can consult you and give
@@ -23,7 +25,7 @@
       </div>
       <div class="hero__right">
         <div>
-          <img class="hero__photo" src="/img/index/main/man.png" alt="" />
+          <img class="hero__photo" src="/img/index/main/woman.png" alt="" />
         </div>
       </div>
     </div>

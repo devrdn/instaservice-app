@@ -1,6 +1,6 @@
 <template>
   <div class="banner">
-    <img class="banner__img" src="/img/expert-one/bckg.png" alt="background" />
+    <img class="banner__img" src="/img/expert-one/background.png" alt="background" />
     <p>{{ title }}</p>
     <nuxt-link to="/">
       <img class="banner__arrow" src="/img/expert-one/arrow.svg" alt="arrow" />

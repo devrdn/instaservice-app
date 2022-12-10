@@ -1,6 +1,6 @@
 <template>
   <section class="crypto-topics">
-    <h1 class="main-header">Crypto topics</h1>
+    <h1 class="main-header">Psychology topics </h1>
     <BaseHeaderLine />
     <div class="crypto-topics__all">
       <v-slide-group style="height: 245px" show-arrows>

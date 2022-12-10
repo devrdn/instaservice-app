@@ -1,11 +1,16 @@
 <template>
   <!-- Featured Experts -->
   <v-container fluid ma-0 pa-0>
-    <BaseBanner :title="`Experts in ${currentCategoryName}`" />
+    <!-- <BaseBanner :title="`Experts in ${currentCategoryName}`" /> -->
+    <BaseBanner :title="``" />
 
-    <FeaturedExpertsSection />
+    <FeaturedExpertsSection title="Online Psychologists available now" />
 
     <!-- All Expert Section -->
+    <h1 class="main-header">All Psychologists in this category</h1>
+    <div class="local-header-line">
+      <BaseHeaderLine />
+    </div>
     <div class="all-experts">
       <div class="all-experts__container">
         <div class="all-experts__container__head">
@@ -29,10 +34,17 @@
               </label>
             </div> -->
             <div class="all-experts__container__head__right__category">
-              <select v-model="currentCategory" class="all-experts__container__head__right__category__select"
-                @change="changeCategory">
-                <option v-for="category in categories" :key="category.id"
-                  :selected="category.slug === $route.params.slug" :value="category.slug">
+              <select
+                v-model="currentCategory"
+                class="all-experts__container__head__right__category__select"
+                @change="changeCategory"
+              >
+                <option
+                  v-for="category in categories"
+                  :key="category.id"
+                  :selected="category.slug === $route.params.slug"
+                  :value="category.slug"
+                >
                   {{ category.name }}
                 </option>
               </select>
@@ -46,7 +58,11 @@
         </div>
         <div class="all-experts__container__cards">
           <!-- Expert Card List -->
-          <ExpertCardAbout v-for="expert in experts" :key="expert.id" :expert="expert" />
+          <ExpertCardAbout
+            v-for="expert in experts"
+            :key="expert.id"
+            :expert="expert"
+          />
           <div ref="intersection" class="observer"></div>
         </div>
       </div>
@@ -58,10 +74,17 @@
 import { mapActions, mapGetters } from 'vuex';
 import categoryApi from '~/api/categoryApi.js';
 import ExpertCardAbout from '~/components/ExpertCardAbout.vue';
+import FeaturedExpertsSection from '~/components/sections/FeaturedExpertsSection.vue';
 import BaseBanner from '~/components/ui/BaseBanner.vue';
+import BaseHeaderLine from '~/components/ui/BaseHeaderLine.vue';
 
 export default {
-  components: { ExpertCardAbout, BaseBanner },
+  components: {
+    ExpertCardAbout,
+    BaseBanner,
+    FeaturedExpertsSection,
+    BaseHeaderLine,
+  },
   layout: () => 'emptyhero',
   data() {
     return {
@@ -87,6 +110,7 @@ export default {
     if (store.getters['category/getCategories'].length === 0) {
       await store.dispatch('category/fetchCategories');
     }
+    await store.dispatch('expert/fetchFeaturedExperts');
   },
   computed: {
     ...mapGetters({
@@ -127,6 +151,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.local-header-line {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
 .all-experts {
   &__container {
     width: 85%;
@@ -206,15 +235,15 @@ export default {
             transition: 0.4s;
           }
 
-          input:checked+&__slider {
+          input:checked + &__slider {
             background-color: $purpleColor;
           }
 
-          input:focus+&__slider {
+          input:focus + &__slider {
             box-shadow: 0 0 1px $purpleColor;
           }
 
-          input:checked+&__slider:before {
+          input:checked + &__slider:before {
             -webkit-transform: translateX(26px);
             -ms-transform: translateX(26px);
             transform: translateX(26px);

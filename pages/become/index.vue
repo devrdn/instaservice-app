@@ -10,8 +10,10 @@
       <div class="banner__text">
         <div class="banner__slogan">
           <p>Work Your way</p>
-          <p>You bring te skill.</p>
-          <p> We'll make earning easy.</p>
+          <div class="banner__slogan-secondary">
+            <p>You bring te skill.</p>
+            <p>We'll make earning easy.</p>
+          </div>
         </div>
         <div class="banner_btn">
           <a href="/become/expert" class="become-expert-main__text__btn"
@@ -250,6 +252,11 @@ export default {
   &__slogan {
     @include rwdmax(585px) {
       display: none;
+    }
+
+    &-secondary {
+      font-weight: normal;
+      font-size: 2.8rem;
     }
   }
 }

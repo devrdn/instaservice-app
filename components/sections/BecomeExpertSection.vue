@@ -2,14 +2,14 @@
   <section class="become-expert">
     <div class="become-expert__container">
       <img
-        src="/img/index/become an expert/bckg.png"
+        src="/img/index/become-an-expert/bckg.png"
         alt="backgroung image"
         class="become-expert__container__img"
       />
       <div class="become-expert__container__text">
         <h2 class="become-expert__container__text__header">
           <p>Are you interested in</p>
-          <p>becoming an expert?</p>
+          <p>becoming a Therapist?</p>
         </h2>
 
         <nuxt-link to="/become" class="become-expert__container__text__btn">Join With Us</nuxt-link>
@@ -47,7 +47,6 @@ export default {};
         align-items: center;
         margin: 0;
       }
-      margin-left: 500px;
       position: absolute;
       display: flex;
       flex-direction: column;
@@ -55,7 +54,7 @@ export default {};
       &__header {
         font-size: 30px;
         font-weight: 600;
-        color: $darkColor;
+        color: white;
         line-height: 1.3;
       }
       &__btn {

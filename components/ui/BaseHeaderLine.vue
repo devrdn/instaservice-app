@@ -7,6 +7,6 @@
   width: 140px;
   height: 5px;
   border-radius: 3px;
-  background-color: $purpleColor;
+  background-color: #AA80FF;
 }
 </style>

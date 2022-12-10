@@ -3,22 +3,23 @@
     <div class="benefits__left">
       <div class="benefits__left__title">
         <h1 class="benefits__left__title">
-          Why search experts on
-          <span class="benefits__left__title-purple">TalkEarn</span> platform?
+          Benefits Of Working on
+          <span class="benefits__left__title-purple">Instaservice</span>
+          platform?
         </h1>
       </div>
       <p class="benefits__left__text">
-        Welcome to our platform of crypto & blockchain experts available in one
-        click. You can find professional crypto experts, traders, investors,
-        blockchain developers, NFT creators, whitepaper designers, and other
-        web3 experts in one place and receive instant advice through direct web
-        calls. You get instant help from trustworthy experts, verified on the
-        blockchain. You pay per minute, exactly as much as you use. The money
-        for consumed minutes settles instantly into the expert's wallet. And,
-        yet, You can choose to remain anonymous.
+        Welcome to our platform of Psychologists & Therapists available in one
+        click. You can find professional Psychotherapists, Social and Cognitive
+        Psychologists, Couple and Family Therapists, Child and Teenager
+        Psychologists, Gestalt Therapists, Educational Psychologists and
+        Experimental Therapists in one place and receive instant advice through
+        direct web calls. You get instant help from trustworthy experts and pay
+        per minute, exactly as much as you use. And, yet, You can choose to
+        remain anonymous.
       </p>
       <div class="benefits__left__btn">
-        <a href="/src/#" class="benefits__left__btn-main">Find Your Expert</a>
+        <a href="/src/#" class="benefits__left__btn-main">Start learning</a>
         <a
           href="https://talkearn.gitbook.io/talkearn/"
           class="benefits__left__btn-secondary"

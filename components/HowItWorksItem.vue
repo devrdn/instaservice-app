@@ -2,7 +2,9 @@
   <div>
     <div class="how-it-works__left__accordion__btn">
       <div class="how-it-works__left__accordion__btn1__number">
-        <button><span>{{ info.number }}</span></button>
+        <button :style="`background-color: ${info.bg}`">
+          <span :style="`color: ${info.textColor}`">{{ info.number }}</span>
+        </button>
         <p>{{ info.text }}</p>
       </div>
     </div>
@@ -15,7 +17,7 @@ export default {
     info: {
       type: Object,
       required: true,
-    }
+    },
   },
 };
 </script>
@@ -89,26 +91,6 @@ export default {
           background-color: #f6ebff;
           border-radius: 20px;
           color: $purpleColor;
-          font-size: 26px;
-        }
-      }
-
-      &__btn2__number {
-        & button {
-          padding: 13px 25px;
-          background-color: #e7e9ff;
-          border-radius: 20px;
-          color: #2b3dc7;
-          font-size: 26px;
-        }
-      }
-
-      &__btn3__number {
-        & button {
-          padding: 13px 25px;
-          background-color: #e9ffef;
-          border-radius: 20px;
-          color: #3dcd65;
           font-size: 26px;
         }
       }

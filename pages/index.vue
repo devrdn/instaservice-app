@@ -6,9 +6,9 @@
     <CategorySection />
 
     <!-- Experts Section -->
-    <FeaturedExpertsSection title="Online Experts" />
+    <FeaturedExpertsSection id="fe-1" title="Online Psychologists available now" />
 
-    <FeaturedExpertsSection title="Featured Experts this week" />
+    <FeaturedExpertsSection id="fe-2" title="Recommended Therapists" />
 
     <!-- How it Works Section -->
     <HowItWorksSection />

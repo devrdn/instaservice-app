@@ -129,8 +129,7 @@
           </a>
         </div>
         <p class="footer__container--text">
-          TalkEarn is a marketplace of crypto experts where you can find an
-          assistancy on every topic.
+          INSTASERVICE connects You with a reliable psychologist instantly
         </p>
       </div>
     </div>

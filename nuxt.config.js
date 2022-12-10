@@ -3,8 +3,8 @@ import colors from 'vuetify/es5/util/colors';
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    titleTemplate: '%s - talkearn-app',
-    title: 'talkearn-app',
+    titleTemplate: '%s - instaservice-app',
+    title: 'instaservice-app',
     htmlAttrs: {
       lang: 'en',
     },

@@ -3,7 +3,7 @@
     <h1 class="main-header">{{ title }}</h1>
     <BaseHeaderLine />
     <div class="featured-experts__experts">
-      <v-slide-group style="height: 510px" show-arrows class="expert-slider">
+      <v-slide-group show-arrows class="expert-slider">
         <template #next>
           <svg
             class="slider__right-arrow"
@@ -52,7 +52,7 @@
             </g>
           </svg>
         </template>
-        <ExpertCardAbout
+        <FeaturedExpertCard
           v-for="expert in featuredExperts"
           :key="expert.id"
           :expert="expert"
@@ -64,10 +64,10 @@
 
 <script>
 import { mapGetters } from 'vuex';
-import ExpertCardAbout from '~/components/ExpertCardAbout.vue';
 import BaseHeaderLine from '~/components/ui/BaseHeaderLine.vue';
+import FeaturedExpertCard from '~/components/FeaturedExpertCard.vue';
 export default {
-  components: { BaseHeaderLine, ExpertCardAbout },
+  components: { BaseHeaderLine, FeaturedExpertCard },
   props: {
     title: {
       type: String,

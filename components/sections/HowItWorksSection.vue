@@ -3,26 +3,26 @@
     <div class="how-it-works__left">
       <p class="how-it-works__left__little-title">How it works</p>
       <h1 class="how-it-works__left__title">
-        Start find a Crypto expert you love with us easily
+        Find a Therapist you love with us easily
       </h1>
       <div class="how-it-works__left__accordion">
-        <HowItWorksItem v-for="(item, index) in items" :key="index" :info="item" />
+        <HowItWorksItem
+          v-for="(item, index) in items"
+          :key="index"
+          :info="item"
+        />
       </div>
     </div>
     <div class="how-it-works__right">
       <div class="how-it-works__right__video">
-        <img src="/img/index/how it works/preview.png" alt="" />
-        <video controls width="500" height="450" hidden>
-          <source src="/img/index/how it works/video.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+        <img src="/img/index/how-it-works/placeholder.png" alt="" />
       </div>
     </div>
   </section>
 </template>
 
 <script>
-import HowItWorksItem from '../HowItWorksItem.vue';
+import HowItWorksItem from '~/components/HowItWorksItem.vue';
 
 export default {
   components: { HowItWorksItem },
@@ -30,18 +30,24 @@ export default {
     items: [
       {
         number: 1,
-        text: "Search the service You need",
+        text: 'Search the service You need',
+        bg: '#F6EBFF',
+        textColor: '#8E22E2',
       },
       {
         number: 2,
-        text: "Select the expert which is Online",
+        text: 'Select the expert which is Online',
+        bg: '#E7E9FF',
+        textColor: '#2B3DC7',
       },
       {
         number: 3,
-        text: "Contact him/her now (click Call button)",
-      }
-    ]
-  })
+        text: 'Click Call button',
+        bg: '#E9FFEF',
+        textColor: '#3DCD65',
+      },
+    ],
+  }),
 };
 </script>
 
@@ -60,7 +66,7 @@ export default {
     align-items: flex-start;
 
     @include rwdmax(1360px) {
-      width: 100%
+      width: 100%;
     }
 
     gap: 20px;
@@ -151,7 +157,6 @@ export default {
     }
 
     &__video {
-
       & img,
       video {
         width: 500px;
