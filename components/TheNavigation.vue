@@ -30,19 +30,23 @@
               Docs
               <ul>
                 <li class="mobile__subitem">
-                  <a target="_blank" href="#">Gitbook</a>
+                  <a target="_blank" href="https://talkearn.gitbook.io/instaservice/">Gitbook</a>
                 </li>
                 <li class="mobile__subitem">
-                  <a target="_blank" href="#">About</a>
+                  <a target="_blank"
+                    href="https://talkearn.gitbook.io/instaservice/our-ecosystem/about-instaservice">About</a>
                 </li>
                 <li class="mobile__subitem">
-                  <a target="_blank" href="#">How it work</a>
+                  <a target="_blank" href="https://talkearn.gitbook.io/instaservice/our-ecosystem/how-it-works">How it
+                    work</a>
                 </li>
                 <li class="mobile__subitem">
-                  <a target="_blank" href="#">FAQ</a>
+                  <a target="_blank" href="https://talkearn.gitbook.io/instaservice/our-ecosystem/faq">FAQ</a>
                 </li>
                 <li class="mobile__subitem">
-                  <a target="_blank" href="#">Pitch Deck</a>
+                  <a target="_blank"
+                    href="https://www.canva.com/design/DAFTCFsSz6s/3HdX7szhwt0aILtTU0C6yQ/view?utm_content=DAFTCFsSz6s&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelin">Pitch
+                    Deck</a>
                 </li>
               </ul>
             </li>
@@ -119,28 +123,32 @@
           <v-list>
             <v-list-item>
               <v-list-item-title>
-                <a target="_blank" href="#">Gitbook</a>
+                <a target="_blank" href="https://talkearn.gitbook.io/instaservice/">Gitbook</a>
               </v-list-item-title>
             </v-list-item>
             <v-list-item>
               <v-list-item-title>
-                <a target="_blank" href="#">About</a>
+                <a target="_blank"
+                  href="https://talkearn.gitbook.io/instaservice/our-ecosystem/about-instaservice">About</a>
               </v-list-item-title>
             </v-list-item>
             <v-list-item>
               <v-list-item-title>
-                <a target="_blank" href="#">How it works</a>
+                <a target="_blank" href="https://talkearn.gitbook.io/instaservice/our-ecosystem/how-it-works">How it
+                  works</a>
               </v-list-item-title>
             </v-list-item>
             <v-list-item>
               <v-list-item-title>
-                <a target="_blank" href="#">FAQ
+                <a target="_blank" href="https://talkearn.gitbook.io/instaservice/our-ecosystem/faq">FAQ
                   Deck</a>
               </v-list-item-title>
             </v-list-item>
             <v-list-item>
               <v-list-item-title>
-                <a target="_blank" href="#">Pitch Deck
+                <a target="_blank"
+                  href="https://www.canva.com/design/DAFTCFsSz6s/3HdX7szhwt0aILtTU0C6yQ/view?utm_content=DAFTCFsSz6s&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink">Pitch
+                  Deck
                 </a>
               </v-list-item-title>
             </v-list-item>
@@ -270,7 +278,7 @@ export default {
     height: 100vh;
     border-radius: 10px;
 
-    @include rwdmax(730px) {
+    @include rwdmax(881px) {
       top: 75px;
     }
 
@@ -332,7 +340,7 @@ export default {
       display: none;
     }
 
-    @include rwdmax(730px) {
+    @include rwdmax(881px) {
       position: absolute;
       display: flex;
       margin-left: 20px;

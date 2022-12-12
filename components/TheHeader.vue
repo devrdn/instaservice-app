@@ -44,7 +44,7 @@ export default {
   },
   computed: {
     headerStaticPosition() {
-      return this.width <= 730 && this.yPosition >= 100;
+      return this.width <= 881 && this.yPosition >= 100;
     },
   },
   mounted() {
@@ -63,7 +63,7 @@ export default {
 .mobile {
   &-icon {
     display: none;
-    @include rwdmax(730px) {
+    @include rwdmax(881px) {
       display: block !important;
       width: 50px;
       margin-left: 78px;
@@ -119,7 +119,7 @@ export default {
       align-items: center;
     }
 
-    @include rwdmax(730px) {
+    @include rwdmax(881px) {
       max-width: 100%;
       margin: 0;
       padding-top: 10px;
@@ -136,7 +136,7 @@ export default {
 
     &__logo {
       display: flex;
-      @include rwdmax(730px) {
+      @include rwdmax(881px) {
         display: none;
       }
     }

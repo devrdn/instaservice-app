@@ -13,12 +13,12 @@
           </div>
           <div class="footer__container__right__block">
             <p class="footer__container__right__block__name">Docs</p>
-            <a target="_blank" href="#" class="footer__container__right__block__link">Gitbook</a>
-            <a target="_blank" href="#" class="footer__container__right__block__link">
+            <a target="_blank" href="https://talkearn.gitbook.io/instaservice/" class="footer__container__right__block__link">Gitbook</a>
+            <a target="_blank" href="https://talkearn.gitbook.io/instaservice/our-ecosystem/about-instaservice" class="footer__container__right__block__link">
               About
             </a>
-            <a target="_blank" class="footer__container__right__block__link" href="#">How it works</a>
-            <a target="_blank" class="footer__container__right__block__link" href="#">FAQ</a>
+            <a target="_blank" class="footer__container__right__block__link" href="https://talkearn.gitbook.io/instaservice/our-ecosystem/how-it-works">How it works</a>
+            <a target="_blank" class="footer__container__right__block__link" href="https://talkearn.gitbook.io/instaservice/our-ecosystem/faq">FAQ</a>
           </div>
           <div class="footer__container__right__block footer__adress">
             <p class="footer__container__right__block__name">Contacts</p>
