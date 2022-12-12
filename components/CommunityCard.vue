@@ -1,23 +1,15 @@
 <template>
   <div class="community__container__cards__block">
-    <img
-      src="/img/become-expert/photo.png"
-      alt="photo"
-      class="community__container__cards__block__img"
-    />
+    <img :src="community.imageUrl" alt="photo" class="community__container__cards__block__img" />
     <div class="community__container__cards__block__text">
       <div class="community__container__cards__block__text__name">
-        Angela Moss
+        {{ community.name }}
       </div>
       <div class="community__container__cards__block__text__profession">
-        Near developer
+        {{ community.job }}
       </div>
     </div>
-    <img
-      src="/img/become-expert/dots.svg"
-      alt="dots"
-      class="community__container__cards__block__dots"
-    />
+    <img src="/img/become-expert/dots.svg" alt="dots" class="community__container__cards__block__dots" />
   </div>
 </template>
 
@@ -28,6 +20,10 @@ export default {
       type: Boolean,
       default: false,
     },
+    community: {
+      type: Object,
+      required: true,
+    }
   },
 };
 </script>
@@ -53,6 +49,7 @@ export default {
           width: 115px;
           height: 115px;
           border-radius: 50%;
+          object-fit: cover;
         }
 
         &__text {

@@ -1,136 +1,116 @@
 <template>
-  <div>
-    <!-- Become Expert Banner -->
-    <div class="banner">
-      <img
-        class="banner__img"
-        src="/img/become-expert/main.png"
-        alt="background"
-      />
-      <div class="banner__text">
-        <div class="banner__slogan">
-          <p>Work Your way</p>
-          <div class="banner__slogan-secondary">
-            <p>You bring te skill.</p>
-            <p>We'll make earning easy.</p>
+  <no-ssr>
+    <div>
+      <!-- Become Expert Banner -->
+      <div class="banner">
+        <img class="banner__img" src="/img/become-expert/main.png" alt="background" />
+        <div class="banner__text">
+          <div class="banner__slogan">
+            <p>Work Your way</p>
+            <div class="banner__slogan-secondary">
+              <p>You bring te skill.</p>
+              <p>We'll make earning easy.</p>
+            </div>
+          </div>
+          <div class="banner_btn">
+            <a href="/become/expert" class="become-expert-main__text__btn">Become an expert</a>
           </div>
         </div>
-        <div class="banner_btn">
-          <a href="/become/expert" class="become-expert-main__text__btn"
-            >Become an expert</a
-          >
+      </div>
+      <!-- Community -->
+      <div class="community">
+        <div class="community__container">
+          <p class="community__container__title">
+            Join our growing expert's community
+          </p>
+          <div class="community__container__cards">
+            <CommunityCard v-for="community in communityAll" :key="community.id" :community="community" />
+            <SkillCard />
+          </div>
         </div>
       </div>
-    </div>
-    <!-- Community -->
-    <div class="community">
-      <div class="community__container">
-        <p class="community__container__title">
-          Join our growing expert's community
-        </p>
-        <div class="community__container__cards">
-          <CommunityCard id="community-1" />
-          <CommunityCard id="community-2" />
-          <CommunityCard id="community-3" />
-          <SkillCard />
-        </div>
-      </div>
-    </div>
 
-    <!-- How it works -->
-    <div class="how-it-work">
-      <div class="how-it-work__container">
-        <p class="how-it-work__container__title">How it works</p>
-        <div class="how-it-work__container__blocks">
-          <div class="how-it-work__container__blocks__step">
-            <img
-              src="/img/become-expert/wallet.svg"
-              alt="wallet"
-              class="how-it-work__container__blocks__step__icon"
-            />
-            <div class="how-it-work__container__blocks__step__text">
-              <p class="how-it-work__container__blocks__step__text__title">
-                1. Connect wallet
-              </p>
-              <p class="how-it-work__container__blocks__step__text__subtitle">
-                Connect with Your wallet (Metamask, Ledger, etc.) and fill out
-                Your profile
-              </p>
+      <!-- How it works -->
+      <div class="how-it-work">
+        <div class="how-it-work__container">
+          <p class="how-it-work__container__title">How it works</p>
+          <div class="how-it-work__container__blocks">
+            <div class="how-it-work__container__blocks__step">
+              <img src="/img/become-expert/wallet.svg" alt="wallet"
+                class="how-it-work__container__blocks__step__icon" />
+              <div class="how-it-work__container__blocks__step__text">
+                <p class="how-it-work__container__blocks__step__text__title">
+                  1. Connect wallet
+                </p>
+                <p class="how-it-work__container__blocks__step__text__subtitle">
+                  Connect with Your wallet (Metamask, Ledger, etc.) and fill out
+                  Your profile
+                </p>
+              </div>
             </div>
-          </div>
-          <div class="how-it-work__container__blocks__step">
-            <img
-              src="/img/become-expert/setup.svg"
-              alt="wallet"
-              class="how-it-work__container__blocks__step__icon"
-            />
-            <div class="how-it-work__container__blocks__step__text">
-              <p class="how-it-work__container__blocks__step__text__title">
-                2. Setup Your services
-              </p>
-              <p class="how-it-work__container__blocks__step__text__subtitle">
-                Easily setup the services You provide and Your price per
-                minute/session
-              </p>
+            <div class="how-it-work__container__blocks__step">
+              <img src="/img/become-expert/setup.svg" alt="wallet" class="how-it-work__container__blocks__step__icon" />
+              <div class="how-it-work__container__blocks__step__text">
+                <p class="how-it-work__container__blocks__step__text__title">
+                  2. Setup Your services
+                </p>
+                <p class="how-it-work__container__blocks__step__text__subtitle">
+                  Easily setup the services You provide and Your price per
+                  minute/session
+                </p>
+              </div>
             </div>
-          </div>
-          <div class="how-it-work__container__blocks__step">
-            <img
-              src="/img/become-expert/making-money.svg"
-              alt="wallet"
-              class="how-it-work__container__blocks__step__icon"
-            />
-            <div class="how-it-work__container__blocks__step__text">
-              <p class="how-it-work__container__blocks__step__text__title">
-                3. Get Paid
-              </p>
-              <p class="how-it-work__container__blocks__step__text__subtitle">
-                Start accepting calls, consulting clients and making money
-              </p>
+            <div class="how-it-work__container__blocks__step">
+              <img src="/img/become-expert/making-money.svg" alt="wallet"
+                class="how-it-work__container__blocks__step__icon" />
+              <div class="how-it-work__container__blocks__step__text">
+                <p class="how-it-work__container__blocks__step__text__title">
+                  3. Get Paid
+                </p>
+                <p class="how-it-work__container__blocks__step__text__subtitle">
+                  Start accepting calls, consulting clients and making money
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <!-- Stories -->
-    <div class="stories">
-      <p class="stories__title">Buyer stories</p>
-      <div class="stories__comments">
-        <BuyerStoryCard id="buyer-1" />
-        <BuyerStoryCard id="buyer-2" />
-        <BuyerStoryCard id="buyer-3" />
-        <BuyerStoryCard id="buyer-4" />
-        <BuyerStoryCard id="buyer-5" />
-        <BuyerStoryCard id="buyer-6" />
-        <BuyerStoryCard id="buyer-7" />
-        <BuyerStoryCard id="buyer-8" />
-        <BuyerStoryCard id="buyer-9" />
-        <BuyerStoryCard id="buyer-10" />
-        <BuyerStoryCard id="buyer-11" />
+      <!-- Stories -->
+      <div class="stories">
+        <p class="stories__title">Buyer stories</p>
+        <div class="stories__comments">
+          <BuyerStoryCard id="buyer-1" />
+          <BuyerStoryCard id="buyer-2" />
+          <BuyerStoryCard id="buyer-3" />
+          <BuyerStoryCard id="buyer-4" />
+          <BuyerStoryCard id="buyer-5" />
+          <BuyerStoryCard id="buyer-6" />
+          <BuyerStoryCard id="buyer-7" />
+          <BuyerStoryCard id="buyer-8" />
+          <BuyerStoryCard id="buyer-9" />
+          <BuyerStoryCard id="buyer-10" />
+          <BuyerStoryCard id="buyer-11" />
+        </div>
+      </div>
+
+      <!-- Q&A -->
+      <div class="qa">
+        <div class="qa__container">
+          <div class="qa__container__title">Q&A</div>
+          <v-expansion-panels flat width="40px" rounded>
+            <QuestionAccordionItem v-for="(item, index) in items" :key="index" :info="item" />
+          </v-expansion-panels>
+        </div>
+      </div>
+
+      <!-- Start Making money -->
+      <div class="action">
+        <p>Start making money as an Expert today</p>
+        <a href="/become/expert">Become an expert</a>
       </div>
     </div>
-
-    <!-- Q&A -->
-    <div class="qa">
-      <div class="qa__container">
-        <div class="qa__container__title">Q&A</div>
-        <v-expansion-panels flat width="40px" rounded>
-          <QuestionAccordionItem
-            v-for="(item, index) in items"
-            :key="index"
-            :info="item"
-          />
-        </v-expansion-panels>
-      </div>
-    </div>
-
-    <!-- Start Making money -->
-    <div class="action">
-      <p>Start making money as an Expert today</p>
-      <a href="/become/expert">Become an expert</a>
-    </div>
-  </div>
+  </no-ssr>
 </template>
 
 <script>
@@ -148,6 +128,26 @@ export default {
   },
   layout: () => 'emptyhero',
   data: () => ({
+    communityAll: [
+      {
+        id: 1,
+        name: "Angela Moss",
+        job: "Family Psychologist",
+        imageUrl: '/img/become-expert/ps-1.jpg'
+      },
+      {
+        id: 2,
+        name: "Doina Popescu",
+        job: "Child Therapist",
+        imageUrl: '/img/become-expert/ps-2.png'
+      },
+      {
+        id: 3,
+        name: "Alexandr Timotin",
+        job: "Gestalt Therapist",
+        imageUrl: '/img/become-expert/ps-3.jpg'
+      }
+    ],
     items: [
       {
         number: 1,
@@ -196,8 +196,10 @@ export default {
   border-radius: 10px !important;
   gap: 10px;
 }
+
 .v-expansion-panel {
   border-radius: 20px !important;
+
   @include rwdmax(735px) {
     max-width: 500px;
   }
@@ -210,17 +212,20 @@ export default {
     max-width: 240px;
   }
 }
+
 .banner {
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
   z-index: 0;
+
   &__img {
     position: relative;
     z-index: 0;
     width: 100%;
   }
+
   &__text {
     margin: 0 auto;
     width: 40%;
@@ -233,22 +238,27 @@ export default {
     font-weight: 800;
     color: $whiteColor;
     letter-spacing: 2px;
+
     @include rwdmax(1402px) {
       font-size: 2.5rem;
       //display: none;
     }
+
     @include rwdmax(949px) {
       font-size: 1.5rem;
       //display: none;
     }
+
     @include rwdmax(588px) {
       font-size: 0.8rem;
       //display: none;
     }
+
     @include rwdmax(585px) {
       width: 100%;
     }
   }
+
   &__slogan {
     @include rwdmax(585px) {
       display: none;
@@ -260,6 +270,7 @@ export default {
     }
   }
 }
+
 .become-expert-main {
   width: 85%;
   position: relative;
@@ -270,6 +281,7 @@ export default {
   background-image: url('/img/become-expert/main.png');
   background-repeat: no-repeat;
   background-size: 100%;
+
   &__text {
     margin: 170px 0;
     position: absolute;
@@ -304,15 +316,18 @@ export default {
       background: $purpleColor;
       padding: 15px 20px;
       border-radius: 60px;
+
       @include rwdmax(949px) {
         padding: 5px 10px;
         //display: none;
       }
+
       @include rwdmax(588px) {
         padding: 5px 10px;
         font-size: 0.5rem;
         //display: none;
       }
+
       @include rwdmax(585px) {
         font-size: 1.5rem;
       }
@@ -374,6 +389,7 @@ export default {
       justify-content: center;
       align-items: center;
       gap: 80px;
+
       @include rwdmax(420px) {
         gap: 50px;
       }
@@ -384,9 +400,11 @@ export default {
 
       &__step {
         width: 33%;
+
         @include rwdmax(420px) {
           width: 90%;
         }
+
         display: flex;
         flex-direction: column;
         align-items: center;

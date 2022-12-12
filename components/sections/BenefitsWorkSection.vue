@@ -28,7 +28,7 @@
       </div>
     </div>
     <div class="benefits__right">
-      <iframe
+      <!-- <iframe
         width="427"
         height="240"
         src="https://www.youtube.com/embed/2fknwD3NJLU"
@@ -36,8 +36,8 @@
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen
-      ></iframe>
-      <!-- <img src="/img/index/benefits/benefits.png" alt="man" /> -->
+      ></iframe> -->
+      <img src="/img/index/benefits/benefits.png" alt="man" />
     </div>
   </section>
 </template>
