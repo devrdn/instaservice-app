@@ -7,85 +7,31 @@
         <div class="footer__container__right">
           <div class="footer__container__right__block">
             <p class="footer__container__right__block__name">Experts</p>
-            <nuxt-link to="/" class="footer__container__right__block__link"
-              >Homepage</nuxt-link
-            >
-            <nuxt-link to="/" class="footer__container__right__block__link"
-              >All Experts</nuxt-link
-            >
-            <nuxt-link
-              to="/category"
-              class="footer__container__right__block__link"
-              >By Category</nuxt-link
-            >
-          </div>
-          <div class="footer__container__right__block">
-            <p class="footer__container__right__block__name">
-              Become an expert
-            </p>
-            <nuxt-link
-              to="/become"
-              class="footer__container__right__block__link"
-              >How to become an expert</nuxt-link
-            >
-            <nuxt-link
-              to="/become/expert"
-              class="footer__container__right__block__link"
-              >Fill out the form</nuxt-link
-            >
+            <nuxt-link to="/become" class="footer__container__right__block__link">How to become an expert</nuxt-link>
+            <nuxt-link to="/category" class="footer__container__right__block__link">By Category</nuxt-link>
+            <nuxt-link to="/become/expert" class="footer__container__right__block__link">Become an expert</nuxt-link>
           </div>
           <div class="footer__container__right__block">
             <p class="footer__container__right__block__name">Docs</p>
-            <a
-              target="_blank"
-              href="https://talkearn.gitbook.io/talkearn/"
-              class="footer__container__right__block__link"
-              >Gitbook</a
-            >
-            <a
-              target="_blank"
-              href="https://talkearn.gitbook.io/talkearn/tokenomics/roadmap"
-              class="footer__container__right__block__link"
-            >
-              Roadmap
+            <a target="_blank" href="#" class="footer__container__right__block__link">Gitbook</a>
+            <a target="_blank" href="#" class="footer__container__right__block__link">
+              About
             </a>
-            <a
-              target="_blank"
-              class="footer__container__right__block__link"
-              href="https://talkearn.gitbook.io/talkearn/tokenomics/general-idea-of-tet-tokenomics"
-              >Tokenomics</a
-            >
-            <a
-              target="_blank"
-              class="footer__container__right__block__link"
-              href="https://www.canva.com/design/DAFS7yG_upA/e6jLQj-paAml9VE19A1-9g/view?utm_content=DAFS7yG_upA&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink"
-              >Pitch Deck</a
-            >
-            <a
-              target="_blank"
-              class="footer__container__right__block__link"
-              href="https://talkearn.gitbook.io/talkearn/tokenomics/general-idea-of-tet-tokenomics"
-              >TET Points Program</a
-            >
+            <a target="_blank" class="footer__container__right__block__link" href="#">How it works</a>
+            <a target="_blank" class="footer__container__right__block__link" href="#">FAQ</a>
           </div>
           <div class="footer__container__right__block footer__adress">
             <p class="footer__container__right__block__name">Contacts</p>
             <div class="footer__container__right__block__link__icon">
               <img src="/img/index/footer/map.svg" alt="" />
-              <a
-                href="mailto:info@talkearn.app"
-                class="footer__container__right__block__link"
-              >
-                info@talkearn.app
+              <a href="mailto:info@talkearn.app" class="footer__container__right__block__link">
+                info@instaservice.io
               </a>
             </div>
             <div class="footer__container__right__block__link__icon">
               <img src="/img/index/footer/phone.svg" alt="" />
-              <a
-                href="tel:40746150515"
-                class="footer__container__right__block__link"
-              >
-                40746150515
+              <a href="tel:40746150515" class="footer__container__right__block__link">
+                + 40 746 150 515
               </a>
             </div>
           </div>
@@ -93,39 +39,19 @@
 
         <div class="footer__container__left__icons">
           <a href="https://t.me/talkearn_official">
-            <img
-              src="/img/index/footer/tg.svg"
-              style="fill: #fff"
-              class="footer__container__left__icons_fb"
-            />
+            <img src="/img/index/footer/tg.svg" style="fill: #fff" class="footer__container__left__icons_fb" />
           </a>
           <a href="https://twitter.com/TalkEarn">
-            <img
-              src="/img/index/footer/tw.svg"
-              alt=""
-              class="footer__container__left__icons_tw"
-            />
+            <img src="/img/index/footer/tw.svg" alt="" class="footer__container__left__icons_tw" />
           </a>
           <a href="https://talkearn.medium.com">
-            <img
-              src="/img/index/footer/md.svg"
-              alt=""
-              class="footer__container__left__icons_yt"
-            />
+            <img src="/img/index/footer/md.svg" alt="" class="footer__container__left__icons_yt" />
           </a>
           <a href="https://discord.gg/39jtvD6Q">
-            <img
-              src="/img/index/footer/ds.svg"
-              alt=""
-              class="footer__container__left__icons_lin"
-            />
+            <img src="/img/index/footer/ds.svg" alt="" class="footer__container__left__icons_lin" />
           </a>
           <a href="https://github.com/talkearn/talkearn">
-            <img
-              src="/img/index/footer/git.svg"
-              alt=""
-              class="footer__container__left__icons_inst"
-            />
+            <img src="/img/index/footer/git.svg" alt="" class="footer__container__left__icons_inst" />
           </a>
         </div>
         <p class="footer__container--text">
@@ -292,6 +218,7 @@ export default {};
     }
   }
 }
+
 .footer__adress {
   display: flex;
 }
