@@ -6,7 +6,7 @@ export default {
    * @returns Promise
    */
   getCategories: async () => {
-    return await axios.get('https://back.talkearn.app/api/categories/');
+    return await axios.get('https://back.instaservice.io/api/categories/');
   },
 
   /**
@@ -16,7 +16,7 @@ export default {
    */
   getCategoryBySlug: async (categorySlug) => {
     return await axios.get(
-      'https://back.talkearn.app/api/category?slug=investments',
+      'https://back.instaservice.io/api/category?slug=investments',
       {
         params: {
           slug: categorySlug,

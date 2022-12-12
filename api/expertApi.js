@@ -6,7 +6,7 @@ export default {
    * @returns Promise
    */
   getFeaturedExperts: async () => {
-    return await axios.get('https://back.talkearn.app/api/experts/featured');
+    return await axios.get('https://back.instaservice.io/api/experts/featured');
   },
 
   /**
@@ -16,7 +16,7 @@ export default {
    * @returns Promise
    */
   getExpertBySlug: async (categorySlug, expertSlug) => {
-    return await axios.get('https://back.talkearn.app/api/expert', {
+    return await axios.get('https://back.instaservice.io/api/expert', {
       params: {
         slug: expertSlug,
         category_slug: categorySlug,
@@ -31,7 +31,7 @@ export default {
    * @returns Promise
    */
   getExpertsByCategory: async (categoryId, pageNum) => {
-    return await axios.get('https://back.talkearn.app/api/experts', {
+    return await axios.get('https://back.instaservice.io/api/experts', {
       params: {
         category_id: categoryId,
         page: pageNum,
@@ -45,7 +45,7 @@ export default {
    * @returns Promise
    */
   searchExpert: async (searchText, pageNum) => {
-    return await axios.get('https://back.talkearn.app/api/experts/search', {
+    return await axios.get('https://back.instaservice.io/api/experts/search', {
       params: {
         find: searchText,
         page: pageNum,
@@ -54,7 +54,7 @@ export default {
   },
 
   setExpert: async (expert) => {
-    return await axios.post('https://back.talkearn.app/api/expert', expert, {
+    return await axios.post('https://back.instaservice.io/api/expert', expert, {
       headers: {
         'Content-Type': 'multipart/form-data',
       },
