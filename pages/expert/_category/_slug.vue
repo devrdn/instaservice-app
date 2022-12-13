@@ -88,13 +88,13 @@
           <button>Schedule meeting</button>
         </div>
       </div>
-      <div class="expert__tags">
+      <!-- <div class="expert__tags">
         <CategoryTagItem
           v-for="(tag, index) in tags"
           :key="index"
           :tag-name="tag"
         />
-      </div>
+      </div> -->
       <div class="expert__video" v-html="removeSlashed(expert.video)"></div>
 
       <div class="expert__text">

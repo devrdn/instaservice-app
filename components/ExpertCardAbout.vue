@@ -67,7 +67,7 @@
       </div>
     </nuxt-link>
     <div class="all-experts__btns">
-      <a v-if="expert.available === 'ONLINE'" href="/" class="all-experts__btn"
+      <a v-if="expert.available" href="/" class="all-experts__btn online"
         >Call</a
       >
       <a href="/" class="all-experts__btn">Schedule</a>
@@ -89,6 +89,9 @@ export default {
 <style lang="scss" scoped>
 a {
   color: black;
+}
+.online {
+  background: #219653 !important;
 }
 .all-experts {
   &__btns {

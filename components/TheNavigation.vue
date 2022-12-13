@@ -1,16 +1,34 @@
 <template>
   <nav style="display: flex" class="navigation">
-    <svg class="bar" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" @click="closeMenu">
+    <svg
+      class="bar"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 448 512"
+      @click="closeMenu"
+    >
       <!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) -->
       <path
-        d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z" />
+        d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"
+      />
     </svg>
-    <div v-if="width < 1121 && isOpenMenu" class="mobile-container" ref="mobile">
+    <div
+      v-if="width < 1121 && isOpenMenu"
+      class="mobile-container"
+      ref="mobile"
+    >
       <div class="topnav">
         <div id="myLinks">
           <ul>
             <li class="mobile__item">
-              Home
+              Experts
+              <ul>
+                <li class="mobile__subitem">
+                  <nuxt-link to="/">Home Page</nuxt-link>
+                </li>
+                <li class="mobile__subitem">
+                  <nuxt-link to="/category">Experts By Category</nuxt-link>
+                </li>
+              </ul>
             </li>
             <li class="mobile__item">
               Become an expert
@@ -19,10 +37,7 @@
                   <nuxt-link to="/become">How to become an expert</nuxt-link>
                 </li>
                 <li class="mobile__subitem">
-                  <nuxt-link to="/category">By Category</nuxt-link>
-                </li>
-                <li class="mobile__subitem">
-                  <nuxt-link to="/become/expert">Become an expert</nuxt-link>
+                  <nuxt-link to="/become/expert">Fill out the form</nuxt-link>
                 </li>
               </ul>
             </li>
@@ -30,49 +45,86 @@
               Docs
               <ul>
                 <li class="mobile__subitem">
-                  <a target="_blank" href="https://talkearn.gitbook.io/instaservice/">Gitbook</a>
+                  <a
+                    target="_blank"
+                    href="https://talkearn.gitbook.io/instaservice/"
+                    >Gitbook</a
+                  >
                 </li>
                 <li class="mobile__subitem">
-                  <a target="_blank"
-                    href="https://talkearn.gitbook.io/instaservice/our-ecosystem/about-instaservice">About</a>
+                  <a
+                    target="_blank"
+                    href="https://talkearn.gitbook.io/instaservice/our-ecosystem/about-instaservice"
+                    >About</a
+                  >
                 </li>
                 <li class="mobile__subitem">
-                  <a target="_blank" href="https://talkearn.gitbook.io/instaservice/our-ecosystem/how-it-works">How it
-                    work</a>
+                  <a
+                    target="_blank"
+                    href="https://talkearn.gitbook.io/instaservice/our-ecosystem/how-it-works"
+                    >How it work</a
+                  >
                 </li>
                 <li class="mobile__subitem">
-                  <a target="_blank" href="https://talkearn.gitbook.io/instaservice/our-ecosystem/faq">FAQ</a>
+                  <a
+                    target="_blank"
+                    href="https://talkearn.gitbook.io/instaservice/our-ecosystem/faq"
+                    >FAQ</a
+                  >
                 </li>
                 <li class="mobile__subitem">
-                  <a target="_blank"
-                    href="https://www.canva.com/design/DAFTCFsSz6s/3HdX7szhwt0aILtTU0C6yQ/view?utm_content=DAFTCFsSz6s&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelin">Pitch
-                    Deck</a>
+                  <a
+                    target="_blank"
+                    href="https://www.canva.com/design/DAFTCFsSz6s/3HdX7szhwt0aILtTU0C6yQ/view?utm_content=DAFTCFsSz6s&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelin"
+                    >Pitch Deck</a
+                  >
                 </li>
               </ul>
             </li>
           </ul>
           <ul class="mobile__item-bottom">
             <li class="mobile__subitem-bottom">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" xml:space="preserve" width="30px"
-                fill="gray">
-                <path fill="#282828"
-                  d="M138.832 137.698h-77c-5.2 0-9.5-4.3-9.5-9.5v-57c0-5.2 4.3-9.5 9.5-9.5h77c5.2 0 9.5 4.3 9.5 9.5v57c0 5.2-4.3 9.5-9.5 9.5zm-77-72c-3 0-5.5 2.5-5.5 5.5v57c0 3 2.5 5.5 5.5 5.5h77c3 0 5.5-2.5 5.5-5.5v-57c0-3-2.5-5.5-5.5-5.5h-77z" />
-                <path fill="#282828"
-                  d="M100.332 112.098c-.5 0-1-.2-1.4-.6l-31.6-31.6c-.8-.8-.8-2 0-2.8.8-.8 2-.8 2.8 0l30.2 30.1 30.8-30.8c.8-.8 2-.8 2.8 0 .8.8.8 2 0 2.8l-32.2 32.3c-.4.4-.9.6-1.4.6z" />
-                <path fill="#282828"
-                  d="M69.032 122.198c-.5 0-1-.2-1.4-.6-.8-.8-.8-2 0-2.8l20.7-20.7c.8-.8 2-.8 2.8 0 .8.8.8 2 0 2.8l-20.6 20.7c-.4.4-1 .6-1.5.6zM132.632 122.198c-.5 0-1-.2-1.4-.6l-20.7-20.7c-.8-.8-.8-2 0-2.8.8-.8 2-.8 2.8 0l20.7 20.7c.8.8.8 2 0 2.8-.4.4-.9.6-1.4.6z" />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 200 200"
+                xml:space="preserve"
+                width="30px"
+                fill="gray"
+              >
+                <path
+                  fill="#282828"
+                  d="M138.832 137.698h-77c-5.2 0-9.5-4.3-9.5-9.5v-57c0-5.2 4.3-9.5 9.5-9.5h77c5.2 0 9.5 4.3 9.5 9.5v57c0 5.2-4.3 9.5-9.5 9.5zm-77-72c-3 0-5.5 2.5-5.5 5.5v57c0 3 2.5 5.5 5.5 5.5h77c3 0 5.5-2.5 5.5-5.5v-57c0-3-2.5-5.5-5.5-5.5h-77z"
+                />
+                <path
+                  fill="#282828"
+                  d="M100.332 112.098c-.5 0-1-.2-1.4-.6l-31.6-31.6c-.8-.8-.8-2 0-2.8.8-.8 2-.8 2.8 0l30.2 30.1 30.8-30.8c.8-.8 2-.8 2.8 0 .8.8.8 2 0 2.8l-32.2 32.3c-.4.4-.9.6-1.4.6z"
+                />
+                <path
+                  fill="#282828"
+                  d="M69.032 122.198c-.5 0-1-.2-1.4-.6-.8-.8-.8-2 0-2.8l20.7-20.7c.8-.8 2-.8 2.8 0 .8.8.8 2 0 2.8l-20.6 20.7c-.4.4-1 .6-1.5.6zM132.632 122.198c-.5 0-1-.2-1.4-.6l-20.7-20.7c-.8-.8-.8-2 0-2.8.8-.8 2-.8 2.8 0l20.7 20.7c.8.8.8 2 0 2.8-.4.4-.9.6-1.4.6z"
+                />
               </svg>
-              <a href="mailto:info@talkearn.app" style="color: gray">info@instaservice.io</a>
+              <a href="mailto:info@talkearn.app" style="color: gray"
+                >info@instaservice.io</a
+              >
             </li>
             <li class="mobile__subitem-bottom">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" style="enable-background: new 0 0 120 120"
-                xml:space="preserve" width="20" fill="gray">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 120 120"
+                style="enable-background: new 0 0 120 120"
+                xml:space="preserve"
+                width="20"
+                fill="gray"
+              >
                 <switch>
                   <g>
                     <path
-                      d="M30.9 120c-6.4 0-12.9-2.4-17.7-7.3l-1.8-1.7 99.5-99.5 1.7 1.7c9.8 9.8 9.8 25.7 0 35.5l-64 64c-4.8 4.9-11.3 7.3-17.7 7.3zm-12.4-9.2c7.9 6.2 19.4 5.6 26.7-1.6l64-64c7.3-7.3 7.8-18.8 1.6-26.7l-92.3 92.3z" />
+                      d="M30.9 120c-6.4 0-12.9-2.4-17.7-7.3l-1.8-1.7 99.5-99.5 1.7 1.7c9.8 9.8 9.8 25.7 0 35.5l-64 64c-4.8 4.9-11.3 7.3-17.7 7.3zm-12.4-9.2c7.9 6.2 19.4 5.6 26.7-1.6l64-64c7.3-7.3 7.8-18.8 1.6-26.7l-92.3 92.3z"
+                    />
                     <path
-                      d="M84.2 45.1 69.3 30.2 99.5 0l14.9 14.9-30.2 30.2zm-7.9-14.9 7.9 7.9 23.2-23.2L99.5 7 76.3 30.2zM14.9 114.4 0 99.5l30.2-30.2 14.9 14.9-30.2 30.2zM7 99.5l7.9 7.9 23.2-23.2-7.9-7.9L7 99.5z" />
+                      d="M84.2 45.1 69.3 30.2 99.5 0l14.9 14.9-30.2 30.2zm-7.9-14.9 7.9 7.9 23.2-23.2L99.5 7 76.3 30.2zM14.9 114.4 0 99.5l30.2-30.2 14.9 14.9-30.2 30.2zM7 99.5l7.9 7.9 23.2-23.2-7.9-7.9L7 99.5z"
+                    />
                   </g>
                 </switch>
               </svg>
@@ -85,16 +137,30 @@
 
     <ul v-else-if="width > 1121" class="navigation__list">
       <li class="navigation__item">
-        <v-menu open-on-hover rounded="b-xl" offset-y>
+        <v-menu open-on-hover close-on-click rounded="b-xl" offset-y>
           <template #activator="{ on, attrs }">
-            <div style="z-index: 10" v-bind="attrs" v-on="on"><nuxt-link to="/">Home</nuxt-link></div>
+            <div stlye="z-index: 10" v-bind="attrs" v-on="on">Experts</div>
           </template>
+          <v-list>
+            <v-list-item>
+              <v-list-item-title>
+                <nuxt-link to="/">Home Page</nuxt-link>
+              </v-list-item-title>
+            </v-list-item>
+            <v-list-item>
+              <v-list-item-title>
+                <nuxt-link to="/category">Experts By Category</nuxt-link>
+              </v-list-item-title>
+            </v-list-item>
+          </v-list>
         </v-menu>
       </li>
       <li class="navigation__item">
         <v-menu open-on-hover close-on-click rounded="b-xl" offset-y>
           <template #activator="{ on, attrs }">
-            <div stlye="z-index: 10" v-bind="attrs" v-on="on">Experts</div>
+            <div stlye="z-index: 10" v-bind="attrs" v-on="on">
+              Become an expert
+            </div>
           </template>
           <v-list>
             <v-list-item>
@@ -104,12 +170,7 @@
             </v-list-item>
             <v-list-item>
               <v-list-item-title>
-                <nuxt-link to="/category">By Category</nuxt-link>
-              </v-list-item-title>
-            </v-list-item>
-            <v-list-item>
-              <v-list-item-title>
-                <nuxt-link to="/become/expert">Become an expert</nuxt-link>
+                <nuxt-link to="/become/expert">Fill out the form</nuxt-link>
               </v-list-item-title>
             </v-list-item>
           </v-list>
@@ -123,32 +184,99 @@
           <v-list>
             <v-list-item>
               <v-list-item-title>
-                <a target="_blank" href="https://talkearn.gitbook.io/instaservice/">Gitbook</a>
+                <a
+                  target="_blank"
+                  href="https://talkearn.gitbook.io/instaservice/"
+                  >Gitbook</a
+                >
               </v-list-item-title>
             </v-list-item>
             <v-list-item>
               <v-list-item-title>
-                <a target="_blank"
-                  href="https://talkearn.gitbook.io/instaservice/our-ecosystem/about-instaservice">About</a>
+                <a
+                  target="_blank"
+                  href="https://talkearn.gitbook.io/instaservice/our-ecosystem/about-instaservice"
+                  >About</a
+                >
               </v-list-item-title>
             </v-list-item>
             <v-list-item>
               <v-list-item-title>
-                <a target="_blank" href="https://talkearn.gitbook.io/instaservice/our-ecosystem/how-it-works">How it
-                  works</a>
+                <a
+                  target="_blank"
+                  href="https://talkearn.gitbook.io/instaservice/our-ecosystem/how-it-works"
+                  >How it works</a
+                >
               </v-list-item-title>
             </v-list-item>
             <v-list-item>
               <v-list-item-title>
-                <a target="_blank" href="https://talkearn.gitbook.io/instaservice/our-ecosystem/faq">FAQ
-                  Deck</a>
+                <a
+                  target="_blank"
+                  href="https://talkearn.gitbook.io/instaservice/our-ecosystem/faq"
+                  >FAQ Deck</a
+                >
               </v-list-item-title>
             </v-list-item>
             <v-list-item>
               <v-list-item-title>
-                <a target="_blank"
-                  href="https://www.canva.com/design/DAFTCFsSz6s/3HdX7szhwt0aILtTU0C6yQ/view?utm_content=DAFTCFsSz6s&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink">Pitch
-                  Deck
+                <a
+                  target="_blank"
+                  href="https://www.canva.com/design/DAFTCFsSz6s/3HdX7szhwt0aILtTU0C6yQ/view?utm_content=DAFTCFsSz6s&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink"
+                  >Pitch Deck
+                </a>
+              </v-list-item-title>
+            </v-list-item>
+          </v-list>
+        </v-menu>
+      </li>
+
+      <li class="navigation__item">
+        <v-menu open-on-hover close-on-click rounded="b-xl" offset-y>
+          <template #activator="{ on, attrs }">
+            <div stlye="z-index: 10" v-bind="attrs" v-on="on">Contacts</div>
+          </template>
+          <v-list>
+            <v-list-item>
+              <v-list-item-title>
+                <a
+                  href="mailto:info@InstaService.app"
+                  >info@InstaService.app</a
+                >
+              </v-list-item-title>
+            </v-list-item>
+            <v-list-item>
+              <v-list-item-title>
+                <a
+                  href="tel:+40746150515"
+                  >40746150515</a
+                >
+              </v-list-item-title>
+            </v-list-item>
+            <v-list-item>
+              <v-list-item-title>
+                <a
+                  target="_blank"
+                  href="https://talkearn.gitbook.io/instaservice/our-ecosystem/how-it-works"
+                  >How it works</a
+                >
+              </v-list-item-title>
+            </v-list-item>
+            <v-list-item>
+              <v-list-item-title>
+                <a
+                  target="_blank"
+                  href="https://talkearn.gitbook.io/instaservice/our-ecosystem/faq"
+                  >FAQ Deck</a
+                >
+              </v-list-item-title>
+            </v-list-item>
+            <v-list-item>
+              <v-list-item-title>
+                <a
+                  target="_blank"
+                  href="https://www.canva.com/design/DAFTCFsSz6s/3HdX7szhwt0aILtTU0C6yQ/view?utm_content=DAFTCFsSz6s&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink"
+                  >Pitch Deck
                 </a>
               </v-list-item-title>
             </v-list-item>
@@ -156,10 +284,9 @@
         </v-menu>
       </li>
     </ul>
-    <a class="navigation__item--purple" href="/src/#"> Connect wallet </a>
+    <a class="navigation__item--purple" href="#"> Connect wallet </a>
   </nav>
 </template>
-
 
 <script>
 export default {

@@ -90,7 +90,7 @@ export default {
       &__img {
         width: 100%;
         object-fit: cover;
-        width: 400px;
+        //width: 400px;
         height: 200px;
         border-radius: 10px 10px 0 0;
         @include rwdmax(560px) {

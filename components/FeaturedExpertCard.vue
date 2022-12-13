@@ -72,11 +72,10 @@
         </div>
       </nuxt-link>
       <div class="all-experts__btns">
-        <nuxt-link to="/"></nuxt-link>
         <nuxt-link
-          v-show="expert.available === 'ONLINE'"
+          v-show="expert.available"
           to="/"
-          class="all-experts__btn"
+          class="all-experts__btn online"
           >Call
         </nuxt-link>
         <nuxt-link to="/" class="all-experts__btn">Schedule</nuxt-link>
@@ -97,11 +96,17 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.online {
+  background: #219653 !important;
+}
 .all-experts {
   color: #1f2131 !important;
   &__btns {
     margin-top: 10px;
     padding-bottom: 10px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
   }
   &__btn {
     background: $purpleColor;

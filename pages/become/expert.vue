@@ -368,6 +368,7 @@ export default {
         .setExpert(form)
         .then(() => {
           this.$refs.form.reset();
+          window.scrollTo(0, 0);
         })
         .catch((err) => {
           this.errors = err.response.data.errors;
@@ -434,9 +435,6 @@ export default {
       justify-content: space-around;
       flex-wrap: wrap;
     }
-    //@include rwdmax(930px) {
-    //  grid-template-columns: repeat(1, 1fr);
-    //}
     &__input {
       display: flex;
       flex-direction: column;
