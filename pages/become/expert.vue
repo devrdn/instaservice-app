@@ -186,6 +186,22 @@
                 placeholder="Service Name"
                 type="text"
               />
+              <div if="errors.videoUrl" class="form__error">
+                <p
+                  v-for="(error, index) in errors['services.0.image']"
+                  :key="index"
+                >
+                  * {{ error }}
+                </p>
+              </div>
+              <div if="errors.videoUrl" class="form__error">
+                <p
+                  v-for="(error, index) in errors['services.0.name']"
+                  :key="index"
+                >
+                  * {{ error }}
+                </p>
+              </div>
             </div>
             <div class="form__upload-photo__content__block">
               <label
@@ -221,6 +237,22 @@
                 placeholder="Service Name"
                 type="text"
               />
+              <div if="errors.videoUrl" class="form__error">
+                <p
+                  v-for="(error, index) in errors['services.1.image']"
+                  :key="index"
+                >
+                  * {{ error }}
+                </p>
+              </div>
+              <div if="errors.videoUrl" class="form__error">
+                <p
+                  v-for="(error, index) in errors['services.1.name']"
+                  :key="index"
+                >
+                  * {{ error }}
+                </p>
+              </div>
             </div>
             <div class="form__upload-photo__content__block">
               <label
@@ -256,6 +288,22 @@
                 placeholder="Service Name"
                 type="text"
               />
+              <div if="errors.videoUrl" class="form__error">
+                <p
+                  v-for="(error, index) in errors['services.2.image']"
+                  :key="index"
+                >
+                  * {{ error }}
+                </p>
+              </div>
+              <div if="errors.videoUrl" class="form__error">
+                <p
+                  v-for="(error, index) in errors['services.2.name']"
+                  :key="index"
+                >
+                  * {{ error }}
+                </p>
+              </div>
             </div>
             <div class="form__upload-photo__content__block">
               <label
@@ -371,7 +419,7 @@ export default {
           window.scrollTo(0, 0);
         })
         .catch((err) => {
-          this.errors = err.response.data.errors;
+          this.errors = err?.response?.data?.errors;
         });
     },
     upload(event) {
