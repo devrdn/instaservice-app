@@ -239,45 +239,12 @@
           <v-list>
             <v-list-item>
               <v-list-item-title>
-                <a
-                  href="mailto:info@InstaService.app"
-                  >info@InstaService.app</a
-                >
+                <a href="mailto:info@InstaService.app">info@InstaService.app</a>
               </v-list-item-title>
             </v-list-item>
             <v-list-item>
               <v-list-item-title>
-                <a
-                  href="tel:+40746150515"
-                  >40746150515</a
-                >
-              </v-list-item-title>
-            </v-list-item>
-            <v-list-item>
-              <v-list-item-title>
-                <a
-                  target="_blank"
-                  href="https://talkearn.gitbook.io/instaservice/our-ecosystem/how-it-works"
-                  >How it works</a
-                >
-              </v-list-item-title>
-            </v-list-item>
-            <v-list-item>
-              <v-list-item-title>
-                <a
-                  target="_blank"
-                  href="https://talkearn.gitbook.io/instaservice/our-ecosystem/faq"
-                  >FAQ Deck</a
-                >
-              </v-list-item-title>
-            </v-list-item>
-            <v-list-item>
-              <v-list-item-title>
-                <a
-                  target="_blank"
-                  href="https://www.canva.com/design/DAFTCFsSz6s/3HdX7szhwt0aILtTU0C6yQ/view?utm_content=DAFTCFsSz6s&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink"
-                  >Pitch Deck
-                </a>
+                <a href="tel:+40746150515">40746150515</a>
               </v-list-item-title>
             </v-list-item>
           </v-list>
